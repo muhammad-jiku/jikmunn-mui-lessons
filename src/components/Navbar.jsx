@@ -5,13 +5,16 @@ import {
   Badge,
   Box,
   InputBase,
+  Menu,
+  MenuItem,
   styled,
   Toolbar,
   Typography,
 } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   const StyledToolbar = styled(Toolbar)({
     display: 'flex',
     justifyContent: 'space-between',
@@ -80,9 +83,10 @@ const Navbar = () => {
               height: 50,
             }}
             src="https://yt3.ggpht.com/yti/AHXOFjWmFw2XVTcEBykt62yr0YjYOuGPQdBirdtSwm7wUw=s88-c-k-c0x00ffffff-no-rj-mo"
+            onClick={(e) => setOpen(true)}
           />
         </Icons>
-        <UserBox>
+        <UserBox onClick={(e) => setOpen(true)}>
           <Avatar
             sx={{
               width: 40,
@@ -93,6 +97,24 @@ const Navbar = () => {
           <Typography variant="span">Jiku</Typography>
         </UserBox>
       </StyledToolbar>
+      <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        open={open}
+        onClose={(e) => setOpen(false)}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+      >
+        <MenuItem>Profile</MenuItem>
+        <MenuItem>My account</MenuItem>
+        <MenuItem>Logout</MenuItem>
+      </Menu>
     </AppBar>
   );
 };
