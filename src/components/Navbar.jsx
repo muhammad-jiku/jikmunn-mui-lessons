@@ -85,10 +85,10 @@ const Navbar = () => {
               height: 50,
             }}
             src="https://yt3.ggpht.com/yti/AHXOFjWmFw2XVTcEBykt62yr0YjYOuGPQdBirdtSwm7wUw=s88-c-k-c0x00ffffff-no-rj-mo"
-            onClick={(e) => setOpen(true)}
+            onClick={() => setOpen(true)}
           />
         </Icons>
-        <UserBox onClick={(e) => setOpen(true)}>
+        <UserBox onClick={() => setOpen(true)}>
           <Avatar
             sx={{
               width: 40,
@@ -103,7 +103,7 @@ const Navbar = () => {
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
         open={open}
-        onClose={(e) => setOpen(false)}
+        onClose={() => setOpen(false)}
         anchorOrigin={{
           vertical: 'top',
           horizontal: 'right',

@@ -42,7 +42,7 @@ const Add = () => {
   return (
     <>
       <Tooltip
-        onClick={(e) => setOpen(true)}
+        onClick={() => setOpen(true)}
         title="Delete"
         sx={{
           position: 'fixed',
@@ -60,7 +60,7 @@ const Add = () => {
       </Tooltip>
       <SytledModal
         open={open}
-        onClose={(e) => setOpen(false)}
+        onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
