@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Feed from './components/Feed';
 import Rightbar from './components/Rightbar';
+import Add from './components/Add';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,11 +24,14 @@ function App() {
           <Skeleton variant="rectangular" height={300} />
         </Stack>
       ) : (
-        <Stack direction="row" spacing={2} justifyContent="space-between">
-          <Sidebar />
-          <Feed />
-          <Rightbar />
-        </Stack>
+        <>
+          <Stack direction="row" spacing={2} justifyContent="space-between">
+            <Sidebar />
+            <Feed />
+            <Rightbar />
+          </Stack>
+          <Add />
+        </>
       )}
     </Box>
   );
