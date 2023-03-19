@@ -3,7 +3,13 @@ import React from 'react';
 
 const Feed = () => {
   return (
-    <Box flex={4} p={2}>
+    <Box
+      flex={4}
+      p={{
+        xs: 0,
+        sm: 2,
+      }}
+    >
       <h1>Feed</h1>
     </Box>
   );
