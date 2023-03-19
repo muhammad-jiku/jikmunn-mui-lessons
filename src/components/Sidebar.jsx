@@ -1,10 +1,11 @@
+import { Box } from '@mui/material';
 import React from 'react';
 
 const Sidebar = () => {
   return (
-    <div>
+    <Box flex={1} p={2}>
       <h1>Sidebar</h1>
-    </div>
+    </Box>
   );
 };
 

@@ -1,10 +1,11 @@
+import { AppBar } from '@mui/material';
 import React from 'react';
 
 const Navbar = () => {
   return (
-    <div>
+    <AppBar position="sticky">
       <h1>Navbar</h1>
-    </div>
+    </AppBar>
   );
 };
 
