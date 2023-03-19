@@ -23,6 +23,7 @@ import React, { useState } from 'react';
 
 const Add = () => {
   const [open, setOpen] = useState(false);
+
   const SytledModal = styled(Modal)({
     display: 'flex',
     alignItems: 'center',
@@ -45,7 +46,8 @@ const Add = () => {
           position: 'fixed',
           bottom: 20,
           left: {
-            xs: 'calc(50% - 25px)',
+            // xs: 'calc(50% - 25px)',
+            xs: 20,
             md: 30,
           },
         }}

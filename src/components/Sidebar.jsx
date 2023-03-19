@@ -4,6 +4,7 @@ import {
   Article,
   Group,
   Home,
+  ModeNight,
   Person,
   Settings,
   Storefront,
@@ -15,9 +16,10 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Switch,
 } from '@mui/material';
 
-const Sidebar = () => {
+const Sidebar = ({ setMode, mode }) => {
   return (
     <Box
       flex={1}
@@ -85,6 +87,16 @@ const Sidebar = () => {
                 <AccountBox />
               </ListItemIcon>
               <ListItemText primary="Profile" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#simple-list">
+              <ListItemIcon>
+                <ModeNight />
+              </ListItemIcon>
+              <Switch
+                onChange={(e) => setMode(mode === 'light' ? 'dark' : 'light')}
+              />
             </ListItemButton>
           </ListItem>
         </List>
