@@ -1,6 +1,10 @@
-import { Box } from '@mui/material';
 import React from 'react';
+
+//  internal import
 import Post from './Post';
+
+//  internal imports
+import { Box } from '@mui/material';
 
 const Feed = () => {
   return (
@@ -11,6 +15,7 @@ const Feed = () => {
         sm: 2,
       }}
     >
+      <Post />
       <Post />
       <Post />
       <Post />

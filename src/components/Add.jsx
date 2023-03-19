@@ -1,11 +1,6 @@
-import {
-  Add as AddIcon,
-  DateRange,
-  EmojiEmotions,
-  Image,
-  PersonAdd,
-  VideoCameraBack,
-} from '@mui/icons-material';
+import React, { useState } from 'react';
+
+//  external imports
 import {
   Avatar,
   Box,
@@ -19,7 +14,14 @@ import {
   Tooltip,
   Typography,
 } from '@mui/material';
-import React, { useState } from 'react';
+import {
+  Add as AddIcon,
+  DateRange,
+  EmojiEmotions,
+  Image,
+  PersonAdd,
+  VideoCameraBack,
+} from '@mui/icons-material';
 
 const Add = () => {
   const [open, setOpen] = useState(false);

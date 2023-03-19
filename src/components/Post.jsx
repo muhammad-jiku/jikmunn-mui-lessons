@@ -1,5 +1,6 @@
 import React from 'react';
-import { Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material';
+
+//  external imports
 import {
   Avatar,
   Card,
@@ -11,6 +12,7 @@ import {
   IconButton,
   Typography,
 } from '@mui/material';
+import { Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material';
 
 const Post = () => {
   return (

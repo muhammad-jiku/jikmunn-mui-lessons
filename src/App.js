@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+//  external imports
 import {
   Box,
   createTheme,
@@ -6,11 +8,13 @@ import {
   Stack,
   ThemeProvider,
 } from '@mui/material';
+
+//  internal imports
+import Add from './components/Add';
+import Feed from './components/Feed';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
-import Feed from './components/Feed';
 import Rightbar from './components/Rightbar';
-import Add from './components/Add';
 
 function App() {
   const [loading, setLoading] = useState(true);

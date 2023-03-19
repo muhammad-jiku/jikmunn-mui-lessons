@@ -1,4 +1,6 @@
-import { Coffee, Mail, Notifications } from '@mui/icons-material';
+import React, { useState } from 'react';
+
+//  external imports
 import {
   AppBar,
   Avatar,
@@ -11,7 +13,7 @@ import {
   Toolbar,
   Typography,
 } from '@mui/material';
-import React, { useState } from 'react';
+import { Coffee, Mail, Notifications } from '@mui/icons-material';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

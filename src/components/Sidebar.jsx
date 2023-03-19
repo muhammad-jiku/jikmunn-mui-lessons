@@ -1,4 +1,15 @@
 import React from 'react';
+
+//  external imports
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Switch,
+} from '@mui/material';
 import {
   AccountBox,
   Article,
@@ -9,15 +20,6 @@ import {
   Settings,
   Storefront,
 } from '@mui/icons-material';
-import {
-  Box,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Switch,
-} from '@mui/material';
 
 const Sidebar = ({ setMode, mode }) => {
   return (
